@@ -41,6 +41,4 @@ md "%~dp0objs\%Platform%"
 cl /O1 /Os /Oi /GS- /Z7 /MT /Fo"objs\%Platform%\CRT_parameter_handler_Thunks.obj" /Zl /c /D "NDEBUG" "%~dp0src\CRT_parameter_handler_Thunks.cpp"
 endlocal
 
-pause
-
 goto:eof
