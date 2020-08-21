@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata minClientVersion="2.5">
+    <id>YY.CRT.Handler.Thunks</id>
+    <version>$version$</version>
+    <title>YY.CRT.Handler.Thunks</title>
+    <authors>YY</authors>
+    <owners>初雨团队</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/Chuyu-Team/YY.CRT.Handler.Thunks</projectUrl>
+    <description>避免fastfail导致无法捕获dmp，适用于Visual Stuido 2012以上平台工具集。</description>
+    <summary>避免fastfail导致无法捕获dmp。</summary>
+    <copyright>Copyright 2020</copyright>
+    <tags>Chuyu YY.CRT.Handler.Thunks native nativepackage</tags>
+    <repository type="git" url="https://github.com/Chuyu-Team/YY.CRT.Handler.Thunks.git" branch="master" commit="$commit$" />
+    <releaseNotes>
+      * 新增Fea，添加`_invalid_parameter` Thunk。
+      * 新增Fea，添加`_purecall` Thunk。
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src=".\objs\**" target="build\native\objs" />
+    <file src=".\YY.CRT.Handler.Thunks.targets" target="build\native\YY.CRT.Handler.Thunks.targets" />
+  </files>
+</package>
